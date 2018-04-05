@@ -1,0 +1,13 @@
+version: '3.1'
+
+services:
+  queproponen:
+    build: .
+    ports:
+      - "8080:80"
+
+  mariadb:
+    build: ./DB Structure/.
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
