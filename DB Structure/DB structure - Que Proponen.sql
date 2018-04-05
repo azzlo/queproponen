@@ -1,4 +1,11 @@
 --
+-- Base de datos se crea por defecto
+--
+CREATE DATABASE queproponen;
+GO
+USE queproponen
+
+--
 -- Estructura de tabla para la tabla `tbCandidatos`
 --
 
